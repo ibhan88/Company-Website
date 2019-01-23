@@ -21,11 +21,11 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/brands')
+@app.route('/works')
 def show_projects():
-    """List of past projects by brand."""
+    """List of works by brand."""
 
-    return render_template("brands.html")
+    return render_template("works.html")
 
 
 @app.route('/upcoming')
