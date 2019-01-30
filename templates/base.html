@@ -8,14 +8,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="/static/css/style.css">
+
     <title>{% block title %} TITLE GOES HERE {% endblock%}</title>
   </head>
   <body>
+    <nav class="navbar fixed-top navbar-light" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="/">Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Menu <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="my-header">
+      <br>
+      <br>
+      <br>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/works">Our Work</a></li>
-        <li><a href="/upcoming">Upcoming Projects</a></li>
+        <li><a href="/upcoming">Upcoming</a></li>
         <li><a href="/misc">Miscellaneous</a></li>
         <li><a href="/about">About Us</a></li>
         <li><a href="/contact">Contact Us</a></li>
