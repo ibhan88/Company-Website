@@ -21,6 +21,40 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/admin')
+def login_form():
+    """Show admin login form."""
+
+    if not session.get("user_id"):
+        return render_template("admin.html")
+
+
+@app.route('/admin', methods=['POST'])
+def login_process():
+    """Login the admin."""
+
+    if not session.get("user_id"):
+        username = request.form.get("username")
+        password = request.form.get("password").encode('utf-8')
+
+        user = User.query.filter_by(username=username).first()
+
+        if not user:
+            flash("No such user exists")
+            return redirect("/login")
+
+        if not bcrypt.checkpw(password, user.password.encode('utf-8')):
+            flash("Incorrect password")
+            return redirect("/login")
+
+        session["user_id"] = user.user_id
+        session["username"] = user.username
+
+        flash("Logged in")
+
+    return redirect("/")
+
+
 @app.route('/works')
 def show_projects():
     """List of works by brand."""
