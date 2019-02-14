@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
-{% block title %}Company Website{% endblock %}
+{% block title %}Company Homepage{% endblock %}
 {% block content %}
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="6000">
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active" id="slideA">
-        <div class="banner-1 d-block w-100"></div>
+        <div class="banner-1 d-block w-100 min-vh-100"></div>
         <!-- <img src="..." class="d-block w-100" alt="..."> -->
         <div class="carousel-caption d-none d-md-block">
           <h5>Slide Title A</h5>
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="carousel-item" id="slideB">
-        <div class="banner-2 d-block w-100"></div>
+        <div class="banner-2 d-block w-100 min-vh-100"></div>
         <!-- <img src="..." class="d-block w-100" alt="..."> -->
         <div class="carousel-caption d-none d-md-block">
           <h5>Slide Title B</h5>
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="carousel-item" id="slideC">
-        <div class="banner-3 d-block w-100"></div>
+        <div class="banner-3 d-block w-100 min-vh-100"></div>
         <!-- <img src="..." class="d-block w-100" alt="..."> -->
         <div class="carousel-caption d-none d-md-block">
           <h5>Slide Title C</h5>
@@ -37,15 +37,4 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <script type="text/javascript">
-    $('#carouselExampleControls').on('slide.bs.carousel', function(e) {
-        if(e.relatedTarget.id == 'slideA'){
-            $('#mainBG').css('background-color', 'blue');
-        } else if(e.relatedTarget.id == 'slideB'){
-            $('#mainBG').css('background-color', 'green');
-        } else if(e.relatedTarget.id == 'slideC'){
-            $('#mainBG').css('background-color', 'yellow');
-        }
-    })
-  </script>
 {% endblock %}
