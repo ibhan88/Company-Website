@@ -15,30 +15,47 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/static/css/style.css">
   </head>
+
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid navbar-fluid">
-        <div class="row justify-content-between">
-          <div class="col">
-            <a class="navbar-brand" href="/">Home</a>
-          </div>
-          <div class="col">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-              Menu
-            </button>
-          </div>
-        </div>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid navbar-fluid justify-content-between">
+        <a class="navbar-brand" href="/home">Logo</a>
+        <button type="button" class="navbar-toggler no-border btn shadow-none" data-toggle="modal" data-target="#mainModal" aria-controls="mainModal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Toggle Content -->
+<!--         <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/works">Our Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/upcoming">Upcoming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/misc">Miscellaneous</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div> -->
       </div>
     </nav>
 
+
+
+
     <!-- Modal -->
-    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+    <div id="mainModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="mainModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <a href="/"><h5 class="modal-title" id="exampleModalCenterTitle">Home</h5></a>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <a href="/home"><h5 class="modal-title" id="exampleModalCenterTitle">Home</h5></a>
+            <button type="button" class="close btn shadow-none" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -53,6 +70,18 @@
       </div>
     </div>
    
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="my-content">{% block content %} CONTENT GOES HERE {% endblock %}</div>
     <div class="my-footer">
