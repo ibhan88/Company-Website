@@ -4,8 +4,8 @@ html, body {
     width: 100%;
 }
 
-.no-border {
-    border: none;
+.center-text {
+    text-align: center;
 }
 
 
@@ -86,6 +86,15 @@ html, body {
     margin: 0;
 }
 
+.modal-title {
+    color: black;
+    font-size: 3rem;
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 0.25em;
+    line-height: 1.2em;
+}
+
 
 
 /* Main Content */
@@ -98,6 +107,11 @@ html, body {
     -o-transition:.6s ease-in-out left;
     transition:.6s ease-in-out left;*/
 }
+
+
+
+
+/*Home Content*/
 
 .carousel, .carousel-inner, .carousel-item {
     width: 100%;
@@ -124,6 +138,36 @@ html, body {
     width: 100%;
     background: #bdbd67;
     height: 100%;
+}
+
+.main-caption {
+    margin: 0;
+}
+
+
+
+/*Our Works Content*/
+
+.works-content {
+    background: red;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    vertical-align: middle;
+}
+
+.row {
+    padding: 0;
+    line-height: 4em;
+    text-align: center;
+}
+
+.clear-div {
+    background: transparent;
+    margin-top: 2em;
+    padding-top: 6em;
+    padding-bottom: 3.5em;
+    overflow: hidden;
 }
 
 
