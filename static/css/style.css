@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 .center-text {
@@ -149,10 +149,9 @@ html, body {
 /*Our Works Content*/
 
 .works-content {
-    background: red;
+    background: #dea2c2f0;
     padding: 0;
     margin: 0;
-    display: flex;
     vertical-align: middle;
 }
 
@@ -164,10 +163,8 @@ html, body {
 
 .clear-div {
     background: transparent;
-    margin-top: 2em;
-    padding-top: 6em;
-    padding-bottom: 3.5em;
-    overflow: hidden;
+    margin-top: 6em;
+    margin-bottom: 4em;
 }
 
 
