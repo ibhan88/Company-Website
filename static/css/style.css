@@ -169,6 +169,27 @@ html, body {
 
 
 
+
+/*Upcoming Content*/
+
+.upcoming-content {
+    vertical-align: middle;
+}
+
+.upcoming-img {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.test-img {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+
+
 /* Footer */
 
 .my-footer {
